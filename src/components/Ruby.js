@@ -7,14 +7,12 @@ const Ruby = () => {
     [ { id: 0, title: "Ruby-Doc.org", description: "Official Ruby Documentation", url: "https://ruby-doc.org/", screenshot: Ruby_doc_org }, 
     { id: 1, title: "Ruby", description: "Community supported documentation", url: "https://www.ruby-lang.org/en/", screenshot: Ruby_lang_org }, 
     { id: 2, title: "Tutorials Point", description: "Tutorials for Ruby beginners", url: "https://www.tutorialspoint.com/ruby/index.htm", screenshot: Ruby_tutorials_point },]
-// Add images later 
-// Get mapping to work first 
 
     return (
       <div >
             <h2>Ruby</h2>
             {ruby_array.map(item =>
-                <div>
+                <div key={item.id}>
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <a href={item.url}>{item.url}</a>
