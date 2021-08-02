@@ -18,7 +18,7 @@ const Javascript = () => {
                     <p>{item.description}</p>
                     <a href={item.url}>{item.url}</a>
                     <br/>
-                    <img src={item.screenshot} alt={item.title} width="50%"></img>
+                    <img src={item.screenshot} alt={item.title} width="30%"></img>
                 </div>
             )
             }
