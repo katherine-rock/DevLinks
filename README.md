@@ -18,4 +18,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Deployment ##
 
-The **DevLinks** app has been deployed through [Netlify](https://www.netlify.com/). 
+The **DevLinks** app has been deployed through [Netlify](https://www.netlify.com/).
+
+## Testing ##
+
+Unit tests were performed using the Jest testing framework. To run the tests, in the command line, enter
+
+`yarn test`
