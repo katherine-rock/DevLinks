@@ -16,7 +16,7 @@ const Javascript = () => {
                 <div key={item.id}>
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
-                    <a href={item.url}>{item.url}</a>
+                    <a href={item.url} target="_blank">{item.url} </a>
                     <br/>
                     <img src={item.screenshot} alt={item.title} width="30%"></img>
                 </div>
