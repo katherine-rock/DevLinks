@@ -1,4 +1,5 @@
 import DevLinks_header_image from '../images/DevLinks_header_image.png'
+import NavBar from './NavBar'
 
 const Header = () => {
     return (
@@ -10,7 +11,10 @@ const Header = () => {
           alt="Neon computer screen with html tags" />
         </div>
 
-        <p className="text-white text-xl flex flex-row justify-center pr-6 pb-6 w-screen">Helpful links for budding software developers</p>
+        <p className="text-white text-xl flex flex-row justify-center pr-6 pb-6 w-screen text-2xl">Helpful links for budding software developers</p>
+        <div className="flex flex-col">
+          <NavBar />
+        </div>
       </div>
     )
   }
