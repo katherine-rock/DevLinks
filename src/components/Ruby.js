@@ -9,9 +9,9 @@ const Ruby = () => {
     { id: 2, title: "Tutorials Point", description: "Tutorials for Ruby beginners", url: "https://www.tutorialspoint.com/ruby/index.htm", screenshot: Ruby_tutorials_point },]
 
     return (
-      <div className="w-screen flex flex-col ">
+      <div className="w-screen flex flex-col">
         <h2 className="text-3xl text-center pt-8">Ruby</h2>
-        <div className="flex flex-row p-8 max-w-max space-x-4">
+        <div className="flex flex-row p-8 max-w-max space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {ruby_array.map(item =>
             <div className="border-4 rounded-lg border-devalmostblack xp-4" key={item.id}>
               <h3 className="text-2xl text-center bg-devalmostblack text-devyellow p-2">{item.title}</h3>

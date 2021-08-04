@@ -12,7 +12,7 @@ const Javascript = () => {
     return (
       <div className="w-screen flex flex-col ">
         <h2 className="text-3xl text-center pt-8">JavaScript</h2>
-        <div className="flex flex-row p-8 max-w-max space-x-4">
+        <div className="flex flex-row p-8 max-w-max space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {javascript_array.map(item =>
             <div className="border-4 rounded-lg border-devalmostblack xp-4" key={item.id}>
               <h3 className="text-2xl text-center bg-devalmostblack text-devyellow p-2">{item.title}</h3>
