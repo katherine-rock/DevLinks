@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <p>Copyright &copy; 2021 Katherine Rock</p>
+        <p className="text-center p-4">Copyright &copy; 2021 Katherine Rock</p>
     )
   }
   
