@@ -10,18 +10,20 @@ const Javascript = () => {
     { id: 2, title: "W3 Schools", description: "Tutorials and references with lots of examples", url: "https://www.w3schools.com/js/default.asp", screenshot: Javascript_W3 },]
 
     return (
-      <div >
-            <h2>JavaScript</h2>
-            {javascript_array.map(item =>
-                <div key={item.id}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <a href={item.url} target="_blank">{item.url} </a>
-                    <br/>
-                    <img src={item.screenshot} alt={item.title} width="30%"></img>
-                </div>
-            )
-            }
+      <div className="w-screen flex flex-col ">
+        <h2 className="text-3xl text-center pt-8">JavaScript</h2>
+        <div className="flex flex-row p-8 max-w-max space-x-4">
+          {javascript_array.map(item =>
+            <div className="border-4 rounded-lg border-devalmostblack xp-4" key={item.id}>
+              <h3 className="text-2xl text-center bg-devalmostblack text-devyellow p-2">{item.title}</h3>
+              <img src={item.screenshot} alt={item.title} width="100%"></img>
+              <p className="pt-3 pl-8">{item.description}</p>
+              <a className="underline pb-4 pl-8" href={item.url} target="_blank">{item.url}</a>
+              <br/>
+            </div> 
+          )
+          }
+        </div>
       </div>
     )
   }
