@@ -40,6 +40,7 @@ const App = () => {
             <Javascript />
             <ReactLinks />
           </Route>
+          
         </Switch>
       </div>
       <Footer/>
