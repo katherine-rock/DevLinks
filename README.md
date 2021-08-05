@@ -8,9 +8,10 @@ The app is available at:
 ![screenshot developer links site](./App_screenshot.png)
 
 ## Styling ##
+
 The favicon/header image was purchased through [VectorStock.com](https://www.vectorstock.com/)  
 
-The colour scheme was generated through [Coolors.co](https://coolors.co/) using the header image as the basis for selecting the colours. 
+The colour scheme was generated through [Coolors.co](https://coolors.co/) using the header image as the basis for selecting the theme colours used throughout the app.
 
 Tailwind CSS has been used for styling.
 
@@ -24,6 +25,12 @@ The **DevLinks** app has been deployed through [Netlify](https://www.netlify.com
 
 ## Testing ##
 
-Unit tests were performed using the Jest testing framework. To run the tests, in the command line, enter
+Unit tests were written using the Jest testing framework. To run the tests, in the command line, enter
 
 `yarn test`
+
+Integration tests were written using the Cypress testing framework. To run the tests, in the command line, enter
+
+`yarn run cypress open`
+
+<!-- ## Download and Installation Instructions ## -->
