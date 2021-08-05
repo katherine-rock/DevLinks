@@ -5,12 +5,10 @@ import Rails from './components/Rails'
 import Javascript from './components/Javascript'
 import ReactLinks from './components/React'
 import Footer from './components/Footer'
-import NavBar from './components/NavBar'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 const App = () => {
