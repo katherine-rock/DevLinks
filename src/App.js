@@ -18,7 +18,6 @@ const App = () => {
     <Router>
       <Header />
       <div>
-        {/* <NavBar /> */}
       
         <Switch>
           <Route path="/ruby">
