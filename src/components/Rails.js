@@ -19,8 +19,6 @@ const Rails = () => {
               <img src={item.screenshot} alt={item.title} width="100%"></img>
               <p className="pt-3 pl-8 pr-8">{item.description}</p>
               <a className="underline pb-4 pl-8 pr-8 flex flex-wrap break-all" href={item.url} target="_blank">{item.url}</a>
-              <br/>
-
             </div> 
           )
           }

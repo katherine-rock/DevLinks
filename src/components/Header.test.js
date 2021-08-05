@@ -2,6 +2,7 @@ import React from 'react';
 import { unmountComponentAtNode } from "react-dom";
 import { render, screen } from '@testing-library/react';
 import Header from './Header';
+import { StaticRouter as Router } from 'react-router-dom'; 
 
 let container = null;
 beforeEach(() => {
@@ -19,19 +20,19 @@ afterEach(() => {
 
 describe('Header', () => {
     it('should show the app name', () => {
-        render(<Header />);
+        render(<Router><Header /></Router>);
         const text = screen.getByText(/Dev Links/i);
         expect(text).toBeInTheDocument();
     })
 
     it('should show the app description', () => {
-        render(<Header />);
+        render(<Router><Header /></Router>);
         const text = screen.getByText(/Helpful links for budding software developers/i);
         expect(text).toBeInTheDocument();
     })
 
     it('should show the header icon', () => {
-        render(<Header />);
+        render(<Router><Header /></Router>);
         const icon = screen.getByAltText(/Neon computer screen with html tags/i);
         expect(icon).toBeInTheDocument();
     })

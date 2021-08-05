@@ -1,6 +1,9 @@
 import Ruby_doc_org from '../images/Ruby_doc_org.png'
 import Ruby_lang_org from '../images/Ruby_lang_org.png'
 import Ruby_tutorials_point from '../images/Ruby_tutorials_point.png'
+import {
+  Link
+} from "react-router-dom";
 
 const Ruby = () => {
     let ruby_array = 
@@ -18,8 +21,6 @@ const Ruby = () => {
               <img src={item.screenshot} alt={item.title} width="100%"></img>
               <p className="pt-3 pl-8 pr-8">{item.description}</p>
               <a className="underline pb-4 pl-8 pr-8 flex flex-wrap break-all" href={item.url} target="_blank">{item.url}</a>
-              <br/>
-
             </div> 
           )
           }
