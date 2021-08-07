@@ -7,6 +7,7 @@ import ReactLinks from './components/React'
 import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
+  Redirect,
   Switch,
   Route,
 } from "react-router-dom";
@@ -39,6 +40,10 @@ const App = () => {
             <Rails />
             <Javascript />
             <ReactLinks />
+          </Route>
+
+          <Route>
+            <Redirect from="*" to="/" />
           </Route>
           
         </Switch>
