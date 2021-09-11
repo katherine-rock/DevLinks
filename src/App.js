@@ -5,9 +5,9 @@ import Rails from './components/Rails'
 import Javascript from './components/Javascript'
 import ReactLinks from './components/React'
 import Footer from './components/Footer'
+import { NotFound } from './components/NotFound';
 import {
   BrowserRouter as Router,
-  Redirect,
   Switch,
   Route,
 } from "react-router-dom";
@@ -35,16 +35,14 @@ const App = () => {
             <ReactLinks />
           </Route>
 
-          <Route path="/">
+          <Route exact path="/">
             <Ruby />
             <Rails />
             <Javascript />
             <ReactLinks />
           </Route>
 
-          <Route>
-            <Redirect from="*" to="/" />
-          </Route>
+          <Route component={NotFound} />
           
         </Switch>
       </div>
