@@ -42,7 +42,7 @@ const App = () => {
             <ReactLinks />
           </Route>
 
-          <Route>
+          <Route path="*">
             <NotFound />
           </Route>
           
