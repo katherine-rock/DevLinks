@@ -42,7 +42,9 @@ const App = () => {
             <ReactLinks />
           </Route>
 
-          <Route component={NotFound} />
+          <Route>
+            <NotFound />
+          </Route>
           
         </Switch>
       </div>
