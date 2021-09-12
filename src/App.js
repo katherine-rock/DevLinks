@@ -5,7 +5,7 @@ import Rails from './components/Rails'
 import Javascript from './components/Javascript'
 import ReactLinks from './components/React'
 import Footer from './components/Footer'
-import { NotFound } from './components/NotFound';
+import NotFound from './components/NotFound';
 import {
   BrowserRouter as Router,
   Switch,

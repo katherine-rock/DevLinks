@@ -27,7 +27,8 @@ const mapFunction = (array) => {
             <a 
             className="underline pb-4 pl-8 pr-8 flex flex-wrap break-all" 
             href={item.url} 
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             {item.url}
             </a>
 
