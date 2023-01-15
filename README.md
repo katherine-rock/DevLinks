@@ -6,7 +6,7 @@ The app is available at:
 
 <https://developerlinks.netlify.app/>
 
-![screenshot developer links site](./App_screenshot_2.png)
+![screenshot developer links site](./App_screenshot_1.png)
 
 ## Styling ##
 
